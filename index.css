@@ -1,0 +1,25 @@
+table,thead,tr,th,td{
+    border: 2px solid black;
+    border-collapse : collapse
+}
+.tdw1{
+    
+    width: 15%;
+    text-align: center;
+}
+.tdw2{
+    width: 30%;
+    text-align: justify;
+}
+.tdw4{
+    width: 50%;
+    text-align: justify;
+}
+.divc{
+    position: fixed;
+    top:42%;
+    padding-top: 2%;
+    color: blue;
+    width: 100%;
+}
+
