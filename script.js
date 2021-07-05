@@ -1,6 +1,5 @@
 var spg;
 var req = new XMLHttpRequest();
-console.log("hi")
 req.open('GET','https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json',true);
 req.send();
 req.onload=function(){
@@ -121,7 +120,7 @@ function createtable(pg,detail)
             spg = pg
 
         } 
-        else if (pg == 10 || pg=='l')
+        else if (pg == 10 || pg=='l' )
         {
             pag = 90
             pk = 99
@@ -188,7 +187,13 @@ function createtable(pg,detail)
             pk  = 89
             spg=spg-1
         }
-   
+        else if(pg=='p' && spg=='l')
+        {
+            pag=80
+            pk=89
+            spg=9
+        }
+           
 var div1 = document.createElement('div')
 div1.setAttribute("id","intab")
 document.body.append(div1)
